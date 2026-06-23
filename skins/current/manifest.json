@@ -1,0 +1,9 @@
+{
+  "id": "current",
+  "name": "现有主宠",
+  "description": "当前已经打磨过的桌面小人形象，包含待机、眨眼、表情和拖拽跑步帧。",
+  "version": 1,
+  "preview": "pet.png",
+  "tags": ["默认", "1080px", "完整表情", "拖拽跑步"],
+  "accent": "#5f7f63"
+}

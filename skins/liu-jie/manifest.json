@@ -1,0 +1,14 @@
+{
+  "id": "liu-jie",
+  "name": "刘婕",
+  "description": "MapleStory 风格长发绿裙抱小熊桌宠皮肤。",
+  "version": 1,
+  "preview": "pet.png",
+  "tags": [
+    "MapleStory",
+    "像素",
+    "长发",
+    "小熊"
+  ],
+  "accent": "#8bb95a"
+}

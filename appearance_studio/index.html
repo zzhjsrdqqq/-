@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>桌宠形象管理</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="library-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">形象库</p>
+            <h1>桌宠外貌</h1>
+          </div>
+          <button class="icon-button" id="refreshButton" title="刷新形象库" aria-label="刷新形象库">↻</button>
+        </div>
+        <div class="skin-list" id="skinList"></div>
+      </aside>
+
+      <section class="preview-stage">
+        <div class="stage-topbar">
+          <div>
+            <p class="eyebrow" id="selectedState">当前主宠</p>
+            <h2 id="skinName">加载中</h2>
+          </div>
+          <div class="status-pill" id="readyState">读取资源</div>
+        </div>
+        <div class="pet-preview" id="petPreview">
+          <img id="previewImage" alt="桌宠预览" />
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <aside class="control-panel">
+        <div class="panel-heading compact">
+          <div>
+            <p class="eyebrow">预览</p>
+            <h2>表情动作</h2>
+          </div>
+        </div>
+
+        <div class="segmented" id="modeButtons">
+          <button data-mode="idle" class="active">待机</button>
+          <button data-mode="happy">开心</button>
+          <button data-mode="sleepy">犯困</button>
+          <button data-mode="wronged">委屈</button>
+          <button data-mode="surprised">惊讶</button>
+          <button data-mode="blink">眨眼</button>
+          <button data-mode="run">跑动</button>
+        </div>
+
+        <div class="skin-meta">
+          <div class="meta-label">资源标签</div>
+          <div class="tag-row" id="tagRow"></div>
+        </div>
+
+        <div class="skin-meta">
+          <div class="meta-label">形象描述</div>
+          <p id="skinDescription"></p>
+        </div>
+
+        <button class="primary-action" id="selectButton">设为主宠</button>
+        <p class="save-state" id="saveState"></p>
+      </aside>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
